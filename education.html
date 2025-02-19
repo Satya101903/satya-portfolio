@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education and Certifications</title>
+    <style>
+      /* styles.css */
+
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(to right, #0a1f44, #2c3e50); /* Gradient background */
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        box-sizing: border-box;
+        position: relative; /* To position the back button */
+      }
+
+      .back-button {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-size: 18px;
+        background-color: #ff577f; /* Accent color */
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .back-button:hover {
+        background-color: #e74c3c; /* Slightly darker shade on hover */
+      }
+
+      .main-content {
+        display: flex;
+        gap: 40px;
+        max-width: 1000px;
+        padding: 20px;
+      }
+
+      .education-section,
+      .certifications-section {
+        background-color: #1c2833; /* Darker background for contrast */
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+        width: 45%; /* Half-width for side-by-side layout */
+        transition: all 0.3s ease;
+      }
+
+      .education-section:hover,
+      .certifications-section:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); /* Hover effect for cards */
+      }
+
+      h2 {
+        font-size: 28px;
+        color: #ff577f; /* Accent color */
+        margin-bottom: 20px;
+        text-align: center;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      .education-details,
+      .certification-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .education-item,
+      .certification-item {
+        margin-bottom: 25px;
+        width: 100%;
+        border-bottom: 1px solid #333;
+        padding-bottom: 10px;
+        transition: background-color 0.3s, transform 0.3s; /* Smooth hover transition */
+      }
+
+      .education-item h3,
+      .certification-item h3 {
+        font-size: 22px;
+        color: #f39c12; /* Golden yellow for titles */
+        margin: 0;
+        font-weight: 500;
+      }
+
+      .education-item .degree,
+      .certification-item .institution,
+      .certification-item .year,
+      .education-item .cgpa {
+        font-size: 16px;
+        color: #bbb;
+        margin: 8px 0;
+      }
+
+      .education-item:hover,
+      .certification-item:hover {
+        background-color: #34495e; /* Subtle background on hover */
+        transform: scale(1.05); /* Gently scale up without shifting position */
+        cursor: pointer;
+      }
+
+      @media (max-width: 768px) {
+        .main-content {
+          flex-direction: column;
+          gap: 20px;
+        }
+        .education-section,
+        .certifications-section {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a href="index.html" class="back-button">Back</a>
+    <section class="main-content">
+      <!-- Education Section -->
+      <div class="education-section">
+        <h2>Education</h2>
+        <div class="education-details">
+          <div class="education-item">
+            <h3>Samata Degree College</h3>
+            <p class="degree">Bachelor's in Computer Applications (2021 - 2024)</p>
+            <p class="cgpa">CGPA: 8.89</p>
+          </div>
+          <div class="education-item">
+            <h3>Vihan Junior College</h3>
+            <p class="degree">Intermediate (2019 - 2021)</p>
+            <p class="cgpa">CGPA: 7.08</p>
+          </div>
+          <div class="education-item">
+            <h3>Sree Siva Shankar Vidya Mandir School</h3>
+            <p class="degree">X SSC (2019)</p>
+            <p class="cgpa">CGPA: 9.2</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications Section -->
+      <div class="certifications-section">
+        <h2>Certifications</h2>
+        <div class="certification-item">
+          <h3>UI/UX Designer Certification</h3>
+          <p class="institution">Tech Mahindra Foundation SMART Academy</p>
+          <p class="year">2024</p>
+        </div>
+        <div class="certification-item">
+          <h3>MS Office</h3>
+          <p class="institution">Data Pro</p>
+          <p class="year">2023</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+s

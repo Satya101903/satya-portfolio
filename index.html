@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <title>index page</title>
+    <link rel="stylesheet" href="style.css" />
+    
+    
+  </head>
+  <body>
+    <header
+      class="rn-header haeder-default black-logo-version header--fixed header--sticky"
+    >
+      <div
+        class="header-wrapper rn-popup-mobile-menu m--0 row align-items-center"
+      >
+        <div class="col-lg-2 col-6">
+          <div class="header-left">
+            <div class="logo">
+              <a href="index.html">
+                <img src="images/port.png" alt="logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-10 col-6">
+          <div class="header-center">
+            <nav
+              id="sideNav"
+              class="mainmenu-nav navbar-example2 d-none d-xl-block onepagenav"
+            >
+              <ul class="primary-menu nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#About">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Contact">Contact</a>
+                </li>
+                <li class="nav-item">
+          <a href="cv.pdf" download class="resume-btn">Download Resume</a>
+        </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <br /><br /><br /><br /><br><br><br>
+    <div id="Home">
+      <div class="container">
+        <div class="content">
+          <h2>WELCOME TO MY CREATIVE SPACE</h2>
+          <h1><span class="typing-effect">Hey, I'm </span><br><span class="highlight typing-name">Satya Veeramallu</span></h1>
+          <p class="role">A Passionate UI/UX Designer & Front-End Developer</p>
+          <p class="description">
+            As an experienced Front-End Developer and UI/UX Designer, I specialize in crafting visually engaging and seamless web experiences. With a strong foundation in both design and development, I thrive on transforming ideas into stunning digital solutions. Designing is not just my profession—it's my passion.
+          </p>
+        </div>
+        <div class="image-container">
+          <img src="https://i.pinimg.com/originals/1a/55/23/1a5523ed77eae11f78d73dd3864c4379.jpg" alt="Profile Image" />
+        </div>
+      </div>
+    </div>
+    <style>
+      #Home {
+  margin-top: 80px; 
+}
+
+    </style>
+    
+    
+  <div id="About" style="padding-top: 90px;">
+  <section id="services">
+    <div class="services-header">
+      <h2>A Glimpse of Me</h2>
+    </div>
+
+    <div class="services-content">
+      <div class="image-left">
+        <img src="your-image.jpg" alt="Your Image">
+        <div class="overlay">
+          <a href="#" target="_blank" class="overlay-btn">Preview</a>
+        </div>
+      </div>
+
+      <div class="content-right">
+        <p>
+          Hello! I’m <span style="color: #ff577f;"> <strong>Veeramallu Satya Saradamba</strong></span>, a passionate <span style="color: #ff577f;"><strong>UI/UX designer</strong></span> and  <span style="color: #ff577f;"><strong>front-end developer.</strong></span> My journey revolves around creating intuitive, visually appealing, and user-centric web experiences. I have a strong passion for bringing design concepts to life while ensuring a seamless and engaging user experience.<br>
+          I thrive on turning creative ideas into reality, whether it's crafting stunning visuals or building interactive, responsive websites. Designing with the user in mind and combining aesthetics with functionality is what drives me to deliver innovative solutions.<br>
+          Throughout my learning journey and hands-on experience, I’ve had the opportunity to explore various tools and technologies to create both beautiful designs and effective web solutions that enhance the user experience.
+        </p>
+
+
+
+        <div class="tabs">
+          <div class="tab active" onclick="showSection('education', this)">Education</div>
+          <div class="tab" onclick="showSection('skills', this)">Skills</div>
+          <div class="tab" onclick="showSection('projects', this)">Projects</div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div id="education" class="section-content active">
+        
+          <ul>
+            <li>2021-2024: Samata Degree College</li>
+            <li>2019-2021: Vihan Junior College</li>
+            <li>2018-2019: Sree Siva Shankar Vidya Mandir School</li>
+          </ul>
+        </div>
+
+        <div id="skills" class="section-content">
+         
+          <ul>
+            <li>HTML, CSS, JavaScript</li> 
+            <li>UI/UX Design</li>
+            <li>Figma</li>
+          </ul>
+        </div>
+
+        <div id="projects" class="section-content">
+ 
+          <ul>
+            <li>Portfolio Website</li>
+            <li>E-commerce Platform</li>
+            <li>Mobile App & Web Application</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script>
+    function showSection(sectionId, element) {
+        document.querySelectorAll('.section-content').forEach(section => {
+            section.classList.remove('active');
+        });
+
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.classList.remove('active');
+        });
+        document.getElementById(sectionId).classList.add('active');
+        element.classList.add('active');
+    }
+</script>
+
+<style>
+  #About {
+    padding-top: 50px;
+  }
+
+  .services-header {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  h1 {
+    font-size: 36px;
+    line-height: 1.2;
+    font-family: 'Arial', sans-serif;
+    color:#fff;
+    letter-spacing: 1px;
+  }
+
+  .services-content {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .image-left {
+    flex: 1;
+    text-align: center;
+  }
+
+  .content-right {
+    flex: 2;
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+  }
+
+  .image-left img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .tabs {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+
+  .tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #333;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-right: 15px;
+    transition: background 0.3s ease;
+  }
+
+  .tab:hover {
+    background: #ff577f;
+  }
+
+  .tab.active {
+    background: #ff577f;
+    color: white;
+  }
+
+ 
+  .tab.active + .divider {
+    display: block;
+  }
+
+ 
+  .section-content {
+    display: none;
+    padding: 20px;
+    text-align: left;
+  
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .section-content.active {
+    display: block;
+  }
+
+  .section-content ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .section-content ul li {
+    padding: 8px 0;
+    color: #f39c12;
+    font-size: 16px;
+  }
+
+  @media (max-width: 768px) {
+    .services-content {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .image-left img {
+      max-width: 250px;
+      margin-bottom: 20px;
+    }
+
+    .content-right {
+      flex: 1;
+      text-align: center;
+    }
+
+    .tabs {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .tab {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .section-content {
+      padding: 15px;
+    }
+  }
+</style> 
+
+    
+
+    
+<div id="Projects" style="padding-top: 50px;">
+  <section class="portfolio-section" style="background-color: #0a1f44;">
+    <div class=" port-container" style="text-align:center;">
+      <h2 class="section-title">Projects</h2><br>
+      <h3 class="section-description">Development Works</h3>
+      <div class="portfolio-grid">
+        <!-- Development Works Cards -->
+        <div class="project-card">
+          <img src="images/Capture.JPG" alt="HTML Project" />
+          <div class="overlay">
+            <a href="https://github.com/Satya101903/Satya-cakewebsite1.git" target="_blank" class="overlay-btn">Source Code</a>
+            <a href="https://satya101903.github.io/Satya-cakewebsite1/" target="_blank" class="overlay-btn">Preview</a>
+          </div>
+          <div class="portfolio-info">
+            <h2><span class="category">HTML</span></h2>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="images/java.JPG" alt="JavaScript Project" />
+          <div class="overlay">
+            <a href="https://github.com/Satya101903/JS-works.git" target="_blank" class="overlay-btn">Source Code</a>
+            <a href="https://satya101903.github.io/JS-works/" target="_blank" class="overlay-btn">Preview</a>
+          </div>
+          <div class="portfolio-info">
+            <h2><span class="category">JavaScript</span></h2>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="images/react.JPG" alt="React JS Project" />
+          <div class="overlay">
+            <a href="https://github.com/Satya101903/react.git" target="_blank" class="overlay-btn">Source Code</a>
+            <a href="https://satya101903.github.io/dashboard" target="_blank" class="overlay-btn">Preview</a>
+          </div>
+          <div class="portfolio-info">
+            <h2><span class="category">REACT JS</span></h2>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="images/wp1.JPG" alt="WordPress Static Project" />
+          <div class="overlay">
+            <a href="https://dev-satya1019.pantheonsite.io/" target="_blank" class="overlay-btn">Preview</a>
+          </div>
+          <div class="portfolio-info">
+            <h2><span class="category">WordPress Static</span></h2>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="images/wp2.JPG" alt="Portfolio Image">
+          <div class="overlay">
+            <a href="https://dev-satya9445.pantheonsite.io/" target="_blank" class="overlay-btn">Preview</a>
+          </div>
+          <div class="portfolio-info">
+            <h2><span class="category">WordPress Dynamic</span></h2>
+          </div>
+        </div>
+      </div>
+      
+      <br><br><br>
+      <h3 class="section-description">Designing Works</h3>
+
+      <div class="category-buttons">
+        <button class="category-button" onclick="filterCategory('all')">All</button>
+        <button class="category-button" onclick="filterCategory('flyers')">Flyers</button>
+        <button class="category-button" onclick="filterCategory('posters')">Posters</button>
+        <button class="category-button" onclick="filterCategory('figma')">Figma</button>
+      </div>
+
+      <div class="portfolio-grid" id="designingWorks">
+        <!-- Flyers Category -->
+        <div class="project-card flyers">
+          <img src="images/photo flyer.jpg" alt="Flyer 1" />
+          <div class="overlay">
+            <a href="images/photo flyer.jpg" target="_blank" class="overlay-btn">Preview</a>
+          </div>
+          <div class="portfolio-info">
+            <h2><span class="category">Flyers 1</span></h2>
+          </div>
+        </div>
+
+        <div class="project-card flyers">
+          <img src="images/burger flyer.jpg" alt="Flyer 2" />
+          <div class="overlay">
+            <a href="images/burger flyer.jpg" target="_blank" class="overlay-btn">Preview</a>
+          </div>
+          <div class="portfolio-info">
+            <h2><span class="category">Flyers 2</span></h2>
+          </div>
+        </div>
+
+        <div class="project-card flyers">
+          <img src="images/beautyflyer.jpg" alt="Flyer 3" />
+          <div class="overlay">
+            <a href="images/beautyflyer.jpg" target="_blank" class="overlay-btn">Preview</a>
+          </div>
+          <div class="portfolio-info">
+            <h2><span class="category">Flyers 3</span></h2>
+          </div>
+        </div>
+
+        <!-- Posters Category -->
+        <div class="project-card posters">
+          <img src="images/DONOT.png" alt="Poster 1" />
+          <div class="overlay">
+            <a href="images/beautyflyer.jpg" target="_blank" class="overlay-btn">Preview</a>
+          </div>
+          <div class="portfolio-info">
+            <h2><span class="category">Posters 1</span></h2>
+          </div>
+        </div>
+
+        <div class="project-card posters">
+          <img src="images/Brown and Beige Illustration Cookies Sale Flyer.jpg" alt="Poster 2" />
+          <div class="overlay">
+            <a href="images/Brown and Beige Illustration Cookies Sale Flyer.jpg" target="_blank" class="overlay-btn">Preview</a>
+          </div>
+          <div class="portfolio-info">
+            <h2><span class="category">Posters 2</span></h2>
+          </div>
+        </div>
+
+        <div class="project-card posters">
+          <img src="images/bride.jpg" alt="Poster 3" />
+          <div class="overlay">
+            <a href="images/bride.jpg" target="_blank" class="overlay-btn">Preview</a>
+          </div>
+          <div class="portfolio-info">
+            <h2><span class="category">Posters 3</span></h2>
+          </div>
+        </div>
+
+        <!-- Figma Category -->
+        <div class="project-card figma">
+          <img src="images/aha.PNG" alt="Figma App" />
+          <div class="overlay">
+            <a href="https://www.figma.com/proto/a0yGqrN7gmShfwfPOP9j3F/Mobile-App?node-id=35-101&t=BRBaAl3ZG0MtFwbt-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1" target="_blank" class="overlay-btn">Preview</a>
+          </div>
+          <div class="portfolio-info">
+            <h2><span class="category">Figma Mobile App</span></h2>
+          </div>
+        </div>
+        <div class="project-card figma">
+          <img src="images/aha web.PNG" alt="Figma App" />
+          <div class="overlay">
+            <a href="https://www.figma.com/proto/xKmYCn6eNBZTSp5SV3rWHU/Web-Application-1?node-id=32-260&p=f&t=tzsrXwTJClyqzWrF-0&scaling=contain&content-scaling=fixed&page-id=0%3A1" target="_blank" class="overlay-btn">Preview</a>
+          </div>
+          <div class="portfolio-info">
+            <h2><span class="category">Figma Web Application</span></h2>
+          </div>
+        </div>
+        
+
+      </div>
+    </div>
+  </section>
+</div>
+<script>
+  function filterCategory(category) {
+    const allProjects = document.querySelectorAll('#designingWorks .project-card');
+    const buttons = document.querySelectorAll('.category-button');
+
+    buttons.forEach(button => {
+      button.style.backgroundColor = '#0a1f44'; 
+    });
+    const activeButton = document.querySelector(`.category-button[onclick="filterCategory('${category}')"]`);
+    if (activeButton) {
+      activeButton.style.backgroundColor = '#f39c12'; 
+    }
+
+
+    allProjects.forEach(project => {
+      if (category === 'all') {
+        project.style.display = 'block'; 
+      } else if (project.classList.contains(category)) {
+        project.style.display = 'block'; 
+      } else {
+        project.style.display = 'none'; 
+      }
+    });
+  }
+
+
+  document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector('.category-button[onclick="filterCategory(\'all\')"]').style.backgroundColor = '#f39c12';
+  });
+</script>
+
+
+<style>
+  .section-title {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  text-align: center;
+  padding: 15px 20px;
+  background: linear-gradient(135deg, #396abe 40%, #dd5f7c 100%);
+  color: white;
+  border-radius: 500px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 600px;
+  height: 80px; 
+  margin: auto;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    padding: 12px;
+    height: 70px;
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    padding: 10px;
+    height: 60px; 
+    font-size: 1.5rem;
+  }
+}
+
+  .category-buttons {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.category-button {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #0a1f44;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: larger;
+  border-radius: 25px;
+}
+
+.category-button:hover {
+  background-color: #f39c12;
+  border-radius: 25px;
+}
+
+
+
+
+.project-card:hover img {
+  transform: scale(1.05); 
+}
+
+.overlay-btn {
+  display: inline-block;
+  background-color: #0a1f44;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.overlay-btn:hover {
+  background-color: #f39c12;
+  
+}
+
+</style>
+
+    <div id="Skills" style="padding-top: 50px;">
+    <div class="skills-section">
+      <div class="skills1">
+      <h2>Skills</h1>
+    </div><br>
+      <!-- Development Skills -->
+      <div class="skills-category">
+        <h2>Development Skills</h2>
+        <div class="skill-box">
+          <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_960_720.png" alt="HTML Icon" />
+          <span>HTML</span>
+          <div class="progress">
+            <div class="progress-bar" style="width: 90%">90%</div>
+          </div>
+        </div>
+        <div class="skill-box">
+          <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png" alt="CSS Icon" />
+          <span>CSS</span>
+          <div class="progress">
+            <div class="progress-bar" style="width: 80%">80%</div>
+          </div>
+        </div>
+        <div class="skill-box">
+          <img src="https://quomodosoft.com/html/rush/images/bootstrap.png" alt="Bootstrap Icon" />
+          <span>Bootstrap</span>
+          <div class="progress">
+            <div class="progress-bar" style="width: 70%">75%</div>
+          </div>
+        </div>
+        <div class="skill-box">
+          <img src="https://icon-library.com/images/javascript-icon-png/javascript-icon-png-18.jpg" alt="JavaScript Icon" />
+          <span>JavaScript</span>
+          <div class="progress">
+            <div class="progress-bar" style="width: 70%">70%</div>
+          </div>
+        </div>
+        <div class="skill-box">
+          <img src="https://pluspng.com/img-png/react-logo-png-img-react-logo-png-react-js-logo-png-transparent-png-1142x1027.png" alt="React Icon" />
+          <span>React JS</span>
+          <div class="progress">
+            <div class="progress-bar" style="width: 75%">70%</div>
+          </div>
+        </div>
+        <div class="skill-box">
+          <img src="http://www.pngall.com/wp-content/uploads/2016/05/WordPress-Logo-Free-Download-PNG.png" alt="WordPress Icon" />
+          <span>WordPress</span>
+          <div class="progress">
+            <div class="progress-bar" style="width: 75%">75%</div>
+          </div>
+        </div>
+      </div>
+
+    
+      <div class="skills-category">
+        <h2>Designing Skills</h2>
+     
+        <div class="skill-box">
+          <img src="https://static-00.iconduck.com/assets.00/apps-figma-icon-512x512-uapiauws.png" alt="Figma icon" />
+          <span>Figma</span>
+          <div class="progress">
+            <div class="progress-bar" style="width: 85%">80%</div>
+          </div>
+        </div>
+        <div class="skill-box">
+          <img src="http://icons.iconarchive.com/icons/ziggy19/yosemite-adobe-cc-dark/512/Adobe-Photoshop-icon.png" alt="Photoshop Icon" />
+          <span>Adobe Photoshop</span>
+          <div class="progress">
+            <div class="progress-bar" style="width: 80%">70%</div>
+          </div>
+        </div>
+        <div class="skill-box">
+          <img src="https://2821714.s21i.faiusr.com/4/17/ABUIABAEGAAg94mbhwYo_MrB2QYwgAQ4gAQ.png" alt="Photopea icon" />
+          <span>Photopea</span>
+          <div class="progress">
+            <div class="progress-bar" style="width: 80%">65%</div>
+          </div>
+        </div>
+        <div class="skill-box">
+          <img src="https://carmentune.com/wp-content/uploads/Canva-logo-1024x1024.png" alt="Canva" />
+          <span>Canva</span>
+          <div class="progress">
+            <div class="progress-bar" style="width: 80%">85%</div>
+          </div>
+        </div>
+        </div>
+      </div>
+   
+    </div>
+
+    <div id="Contact" style="padding-top: 80px;">
+  <main>
+    <section class="contact-section">
+      <div class="touch">
+      <h2>Let's Get in Touch</h2></div> <br>
+      <div class="contact-content">
+        
+        <div class="contact-info">
+        <h3 style="color: #f39c12;">
+   Veeramallu Satya Saradamba ✨
+</h3>
+
+          <p class="job-title">Creative UI/UX Designer & Problem Solver</p>
+          <p class="intro">I'm passionate about crafting beautiful, user-friendly designs. Let's collaborate on your next project! Feel free to reach out to me.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <strong>Phone:</strong>
+              <span>+91 83412 84260</span>
+            </div>
+            <div class="contact-item">
+              <strong>Email:</strong>
+              <span><a href="mailto:Satyaveeramallu19@gmail.com">Satyaveeramallu19@gmail.com</a></span>
+            </div>
+            <div class="contact-item">
+              <strong>LinkedIn:</strong>
+              <span><a href="https://www.linkedin.com/in/satya-veeramallu-1745952b3/" target="_blank">linkedin.com/in/SatyaVeeramallu</a></span>
+            </div>
+            <div class="contact-item">
+              <strong>Naukri:</strong>
+              <span><a href="https://www.naukri.com/mnjuser/homepage" target="_blank">View my Naukri Profile</a></span>
+            </div>
+          </div>
+          <div class="cta-btn">
+            <a href="mailto:Satyaveeramallu19@gmail.com" class="btn">Let’s Discuss Your Project</a>
+          </div>
+        </div>
+        
+     
+        <div class="contact-form">
+          <form>
+            <div class="form-row">
+              <input type="text" placeholder="Your Name" required>
+              <input type="text" placeholder="Phone Number" required>
+            </div>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Subject" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message →</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+ 
+  <footer>
+    <div class="social-share-style-1 mt--40">
+      <span class="title">Find me on:</span>
+      <ul class="social-share d-flex liststyle">
+        <li class="linkedin">
+          <a href="https://www.linkedin.com/in/satya-veeramallu-1745952b3/" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+        </li>
+        <li class="gmail">
+          <a href="mailto:Satyaveeramallu19@gmail.com" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+              <path d="M21 8V4a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v4"></path>
+              <path d="M3 8l9 6 9-6"></path>
+              <path d="M3 16v4a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-4"></path>
+            </svg>
+          </a>
+        </li>
+        <li class="github">
+          <a href="https://github.com/Satya101903" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+              <path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.88 8.16 6.84 9.49.5.09.68-.22.68-.49 0-.24-.01-.89-.01-1.75-2.78.51-3.36-1.34-3.36-1.34-.45-1.16-1.1-1.47-1.1-1.47-.9-.61.07-.6.07-.6 1.03-.07 1.57 1 1.57 1 0 1.77 1.4 3.12 3.13 3.12 1.2 0 2.26-.44 3.04-1.17.09-.87.47-1.68.88-2.1-1.88-.21-3.84-.94-3.84-4.18 0-.92.33-1.68.88-2.27-.09-.22-.38-.91.08-1.88 0 0 1.1-.35 3.62 1.34 1.05-.29 2.19-.43 3.33-.43 1.13 0 2.26.14 3.33.43 2.52-1.69 3.62-1.34 3.62-1.34.46 0 .17 1.66.08 1.88.56.59.88 1.35.88 2.27 0 3.24-1.96 3.98-3.84 4.18.41.42.76 1.27.76 2.51 0 1.81-.01 3.27-.01 3.71 0 .28.18.58.69.49C21.12 20.16 24 16.42 24 12c0-5.52-4.48-10-10-10z"></path>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      </ul>
+    </div>
+    
+  </footer>
+</div>
+<div id="scroll-up" class="scroll-up">
+  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up">
+    <path d="M18 15l-6-6-6 6"></path>
+  </svg>
+</div>
+<style>
+  .scroll-up {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #ff577f;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.scroll-up:hover {
+  background-color: #e44c6d;
+}
+
+.scroll-up svg {
+  display: block;
+  margin: 0 auto;
+}
+
+</style>
+<script>
+  const scrollUpButton = document.getElementById('scroll-up');
+  scrollUpButton.addEventListener('click', function () {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'  
+    });
+  });
+
+  window.onscroll = function () {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      scrollUpButton.style.display = 'block';
+    } else {
+      scrollUpButton.style.display = 'none';
+    }
+  };
+</script>
+
+
+  </body>
+</html>
