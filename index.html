@@ -28,14 +28,16 @@
             </div>
           </div>
         </div>
-
         <div class="col-lg-10 col-6">
           <div class="header-center">
-            <nav
-              id="sideNav"
-              class="mainmenu-nav navbar-example2 d-none d-xl-block onepagenav"
-            >
-              <ul class="primary-menu nav nav-pills">
+            <div class="hamburger-menu d-xl-none" id="hamburgerIcon">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+        
+            <nav id="sideNav" class="mainmenu-nav navbar-example2 onepagenav">
+              <ul class="primary-menu nav nav-pills" id="navList">
                 <li class="nav-item">
                   <a class="nav-link" href="#">Home</a>
                 </li>
@@ -52,13 +54,99 @@
                   <a class="nav-link" href="#Contact">Contact</a>
                 </li>
                 <li class="nav-item">
-          <a href="cv.pdf" download class="resume-btn">Download Resume</a>
-        </li>
+                  <a href="SATYA.pdf" download class="resume-btn">Download Resume</a>
+                </li>
               </ul>
             </nav>
           </div>
         </div>
-      </div>
+<style>
+@media (max-width: 991px) {
+  #sideNav {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger-menu .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #ff577f;
+    margin: 5px auto;
+    transition: all 0.3s;
+  }
+  #sideNav.active {
+    display: block;
+  }
+
+ 
+  .primary-menu {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+   
+  }
+
+  .nav-link {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+
+.hamburger-menu.active .bar:nth-child(1) {
+  transform: rotate(45deg);
+  position: relative;
+  top: 10px;
+}
+
+.hamburger-menu.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-menu.active .bar:nth-child(3) {
+  transform: rotate(-45deg);
+  position: relative;
+  top: -6px;
+}
+
+</style>   
+<script>
+document.getElementById("hamburgerIcon").addEventListener("click", function() {
+  this.classList.toggle("active");
+  document.getElementById("sideNav").classList.toggle("active");
+});
+
+document.querySelectorAll('.primary-menu .nav-link').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    document.getElementById("hamburgerIcon").classList.remove("active");
+    document.getElementById("sideNav").classList.remove("active");
+
+    const targetId = this.getAttribute('href').substring(1);
+    const targetSection = document.getElementById(targetId);
+    
+    if (targetSection) {
+      targetSection.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
+});
+
+
+</script>     
     </header>
     <br /><br /><br /><br /><br><br><br>
     <div id="Home">
@@ -92,7 +180,7 @@
 
     <div class="services-content">
       <div class="image-left">
-        <img src="your-image.jpg" alt="Your Image">
+        <img src="your-image.jpg" alt="">
         <div class="overlay">
           <a href="#" target="_blank" class="overlay-btn">Preview</a>
         </div>
@@ -718,7 +806,6 @@
       </div>
     </section>
   </main>
-  
  
   <footer>
     <div class="social-share-style-1 mt--40">
@@ -773,16 +860,13 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
 .scroll-up:hover {
   background-color: #e44c6d;
 }
-
 .scroll-up svg {
   display: block;
   margin: 0 auto;
 }
-
 </style>
 <script>
   const scrollUpButton = document.getElementById('scroll-up');
@@ -792,7 +876,6 @@
       behavior: 'smooth'  
     });
   });
-
   window.onscroll = function () {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       scrollUpButton.style.display = 'block';
@@ -801,7 +884,5 @@
     }
   };
 </script>
-
-
   </body>
 </html>
